@@ -1,0 +1,11 @@
+☐ TODO
+    ☐ Implement the search function
+        When a text is entered and search is clicked, either open a modal of that photo card or say no search found
+    ✔ Create the mockup of the website with the title, search and rows @done(20-04-12 17:52)
+    ☐ 
+☐ Need to fix 
+    ☐ The photo cards grid is only hard coded. 
+        Need to figure out to how dynammically render 4 photo cards then create a new line after 4 columns. Not sure how if I want infinite scroll or pagination
+    ☐ I want to move the 'Made with <3 in Seattle' to center
+        Can't figure this out at the moment. I tried using text-center but that doesn't work. The flex property in footer forces
+        it to stay on the left. If you remove it, the text will go to the right even with text-center
