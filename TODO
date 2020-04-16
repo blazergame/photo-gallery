@@ -1,14 +1,35 @@
 ☐ TODO
-    ☐ Implement the search function
-        When a text is entered and search is clicked, either open a modal of that photo card or say no search found
+    ✔ Implement the search function @done(20-04-15 17:51)
+        This will search for pictures related to the search query
     ✔ Create the mockup of the website with the title, search and rows @done(20-04-12 17:52)
-    ☐ Ingest unsplash api to grab the images dynamically
+    ✔ Ingest unsplash api to grab the images dynamically @done(20-04-15 10:19)
         Can't figure out how to get the api to work propertly. Trying to fetch it like postman (got postman tow work)
-
-
+        Finally got this to work with both async/await & promises. The issue that I had with the async/await 
+        was that I never called the function after declaring the async function within useEffect.
+    ☐ Add a nav bar with an about page
+        This will just be what this project is for
+        
 ☐ Need to fix 
     ✔ The photo cards grid is only hard coded. @done(20-04-14 18:43)
         Need to figure out to how dynammically render 4 photo cards then create a new line after 4 columns. Not sure how if I want infinite scroll or pagination
+    
     ☐ I want to move the 'Made with <3 in Seattle' to center
         Can't figure this out at the moment. I tried using text-center but that doesn't work. The flex property in footer forces
         it to stay on the left. If you remove it, the text will go to the right even with text-center
+        ☐ Also fix the margin since it's a bit off from the top line
+    
+    ✔ The tags for each image isn't populating under each card @done(20-04-15 18:21)
+        The data is coming back from the api but it just doesn't show up in the span 
+        The issue was that I didn't return the span
+    
+    ✔ Process.env is not loading @done(20-04-15 12:16)
+        Want to put the api key into .env file to be read from but it's not loading it
+        https://www.youtube.com/watch?v=FiGmAI5e91M was able to get it to work with React.
+
+        If using .env file with react, key need to start with REACT_KEY_YOUR_KEY_NAME
+        https://create-react-app.dev/docs/adding-custom-environment-variables/
+        
+    ☐ Fix like icon and number to be centered
+
+    ✔ Set the background of each card to darker shade to be able to show that it's a separate card @done(20-04-15 12:30)
+
